@@ -145,3 +145,12 @@ All servers (except the utility) are connected to their own mongodb cloud databa
 
 # API Documentation  
 api documentations is given in docs folder . So you can also check these without UI .
+
+---
+
+
+# Hashing Algorithms :
+For all the signing and sign verification we use node js **elliptic** library  
+We are using **elliptic\'s** **EDDSA** algorithm .  
+And for curve selection we used **ed25519** which is considered to be a very secure curve .  
+On lc we are giving unique lc id based on product details string hash\'s first 8 characters . And this hash is done by **crypto** library's **md5** hashing .  

@@ -60,7 +60,7 @@ cautious : you have to be in **onoff** directory
 
 this will take between 10-15 minutes depending on your hardware and internet speed  
 
-this will create the fabric network (creating channel, installing chaincode) and 4 node js servers  (you can see them by [docker ps -a] and [pm2 list]  )  
+this will create the fabric network (creating channel, installing chaincode) and 5 node js servers  (you can see them by [docker ps -a] and [pm2 list]  )  
 
 
 To stop it  , run :  

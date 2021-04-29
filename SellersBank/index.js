@@ -13,7 +13,7 @@ connectDB();
 makeWallet();
 
 var app = express();
-
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.post('/sellersbankshipmentobj',async (req,res) => {

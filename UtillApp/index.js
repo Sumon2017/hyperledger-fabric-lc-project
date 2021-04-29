@@ -1,11 +1,13 @@
 var express = require('express');
 const bodyParser = require('body-parser');
 const {eddsa} = require('elliptic');
+const cors = require('cors');
+
 
 const ec = new eddsa('ed25519');
 
 let app = express();
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.post('/',async (req,res) => {

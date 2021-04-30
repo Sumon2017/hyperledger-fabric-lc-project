@@ -5,7 +5,7 @@
 * Docker
 * Docker Compose
 * Fabric 2.2.1
-* Node js
+* Node js  (LTS)
 * Internet Connection (cloud database)
 
 ---

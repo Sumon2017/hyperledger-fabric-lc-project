@@ -26,7 +26,11 @@ For this project we will use only 4 orgs .
 ---
 # How To Run It ?
 
-you need to install pm2 module globally in node js  
+you need to install pm2 module globally in node js  , and make on linux   
+
+```
+    sudo apt install make
+```
 
 ```bash
     npm install pm2 -g

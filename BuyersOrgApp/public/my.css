@@ -1,0 +1,19 @@
+#refresh{
+    display:block; margin:10px auto;;
+}
+
+div.ournav{
+    padding: 10px;
+}
+
+div button#refresh:hover{
+    background-color:burlywood;
+}
+
+div.addremove{
+    display: none;
+}
+
+label{
+    color: burlywood;
+}

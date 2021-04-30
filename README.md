@@ -26,10 +26,10 @@ For this project we will use only 4 orgs .
 ---
 # How To Run It ?
 
-you need to install pm2 module globally in node js  , and make on linux   
+you need to install pm2 module globally in node js  , and build-essential on linux   
 
 ```
-    sudo apt install make
+    sudo apt install build-essential
 ```
 
 ```bash

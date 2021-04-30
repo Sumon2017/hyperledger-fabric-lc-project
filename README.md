@@ -6,6 +6,7 @@
 * Docker Compose
 * Fabric 2.2.1
 * Node js
+* Internet Connection (cloud database)
 
 ---
 ### Basic Structure : 
@@ -61,6 +62,7 @@ cautious : you have to be in **onoff** directory
 this will take between 10-15 minutes depending on your hardware and internet speed  
 
 this will create the fabric network (creating channel, installing chaincode) and 5 node js servers  (you can see them by [docker ps -a] and [pm2 list]  )  
+At the end of it , success will be printed  
 
 
 To stop it  , run :  
@@ -70,10 +72,19 @@ To stop it  , run :
 ```
 
 cautious : you have to be in **onoff** directory  
+At the end of it , success will be printed  
 
+  
+## Now , Open your browser and make 4 new tabs . And hit the following links :  
 
-In the **frontend** folder you will find organizations folder , each of them has an index.html file .  
-Open 4 of them in 4 new tabs on your browser.  
+localhost:3001/index.html  
+localhost:3002/index.html  
+localhost:3003/index.html  
+localhost:3004/index.html  
+
+These are BuyersOrgApp , SellersOrgApp , BuyersBank and SellersBank accordingly.  
+  
+   
 
 
 You will find some crypto materials in this project but these will get overriten with new valid crypto materials .  
@@ -147,6 +158,29 @@ All servers (except the utility) are connected to their own mongodb cloud databa
 api documentations is given in docs folder . So you can also check these without UI .
 
 ---
+
+
+# Notification System Flow :
+When buyersbank or sellersbank does something , it notifies all other 3 servers and the servers save them in cloud database .  
+when seller makes an LC , it notiifies Buyers Organization (all saved in cloud).  
+when buyer approves an LC , it notiifies Buyers Bank (all saved in cloud).
+
+
+---
+
+# We already tested with the following two accounts .  
+# You can check results by logging in :
+
+| SellersOrgApp        | BuyersOrgApp           |
+| ------------- |:-------------:|
+|username : testseller|username : testbuyer|
+|testseller@disbox.org|testbuyer@disbox.org|
+|pass : 1234|pass : 1234|
+
+
+
+---
+
 
 
 # Hashing Algorithms :
